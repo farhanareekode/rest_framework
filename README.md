@@ -43,8 +43,9 @@ Run the following command to install all required dependencies:
    
 4. **Apply database migrations:**
 Run the following command to apply migrations and set up the database:
-  - `python manage.py migrate`
   - `python manage.py makemigrations`
+  - `python manage.py migrate`
+  
 
 5. **Run the development server:**
 Start the server using the following command:
