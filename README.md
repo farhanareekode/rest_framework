@@ -46,6 +46,6 @@ Run the following command to apply migrations and set up the database:
   - `python manage.py migrate`
   - `python manage.py makemigrations`
 
-6. **Run the development server:**
+5. **Run the development server:**
 Start the server using the following command:
    `python manage.py runserver`
