@@ -25,3 +25,27 @@ A simple API for managing a product inventory built using Django REST Framework.
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/product-inventory-api.git
+   
+2. **Create a virtual environment:**
+Run the following command to create a virtual environment:
+`python3 -m venv env`
+
+   *Activate the virtual environment:*
+   On Linux/macOS:
+   `source env/bin/activate`
+   
+   On Windows:
+   `.\env\Scripts\activate`
+
+3. **Install project dependencies:**
+Run the following command to install all required dependencies:
+   `pip install -r requirements.txt`
+   
+4. **Apply database migrations:**
+Run the following command to apply migrations and set up the database:
+  - `python manage.py migrate`
+  - `python manage.py makemigrations`
+
+6. **Run the development server:**
+Start the server using the following command:
+   `python manage.py runserver`
