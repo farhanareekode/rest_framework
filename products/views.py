@@ -8,7 +8,6 @@ from .serializers import ProductSerializer
 def home(request):
     return render(request, 'index.html')
 
-# Function-based view for listing and creating products
 @api_view(['GET', 'POST'])
 def product_list_create(request):
     if request.method == 'GET':
@@ -23,7 +22,6 @@ def product_list_create(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-# Function-based view for retrieving, updating, and deleting a product
 @api_view(['GET', 'PUT', 'DELETE'])
 def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
